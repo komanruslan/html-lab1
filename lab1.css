@@ -1,0 +1,96 @@
+
+body {
+    color: #2b2b2b;                      
+    background-color: #f4f6f8;          
+    background-image: url('banner.png'); 
+    background-attachment: scroll;       
+    background-position: bottom left;    
+    direction: ltr;                    
+    unicode-bidi: normal;               
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 15px;
+    
+   
+    border-right-width: thin;            
+    border-bottom-width: thick;         
+    border-top-width: thin;            
+    border-left-color: #333333;         
+    border-bottom-color: #8b0000;      
+    border-right-color: #888888;       
+    border-right-style: ridge;         
+    border-left-style: inset;           
+    border-top-style: double;            
+
+h2 {
+    position: relative;                 
+    z-index: auto;                    
+    float: none;                        
+    clear: both;                         
+    width: 100%;                        
+    max-width: 800px;                  
+}
+
+h2 + p, h3 + p {
+    margin-left: 20px !important;       
+    margin-bottom: 15px;               
+    line-height: normal;                
+    vertical-align: baseline;           
+}
+
+.text, .name, .firm {
+    padding-left: 10px;                 
+    padding-bottom: 5px;                 
+    outline-width: thin;                
+}
+
+p > a {
+    display: inline;                     
+    height: auto;                       
+    max-height: 100%;                   
+    line-height: 150%;                 
+    outline-style: solid;               
+}
+
+[lang] {                               
+    visibility: visible;               
+}
+
+[align="center"] {                     
+    overflow: visible;   
+}              
+
+a[href^="firm"] {                       
+    color: #8b0000;
+    font-weight: bold;
+}
+
+p:first-child {
+    border-right-style: none;           
+    border-left-style: none;             
+    border-top-style: none;              
+}
+
+p:first-of-type {
+    position: static;                    
+}
+
+p:last-of-type {
+    vertical-align: bottom;             
+}
+
+
+a:active {
+    color: #ff0000;
+}
+
+p::first-line {
+    border-top-width: thin;             
+}
+
+cite::after {
+    content: " (Автор)";
+    color: #666666;
+}
+
+}
