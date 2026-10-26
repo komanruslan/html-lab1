@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Коман Руслан">
+  <meta name="Description" content="Лабораторна робота №4. Варіант 8. Таблиця реалізації продукції ТОВ Тютюновий Дім.">
+  <meta name="Keywords" content="веб-сторінка, таблиці, тютюнові вироби, сигарети, прайс">
+  <title>Лабораторна робота №4. Таблиця товарів ТОВ «Тютюновий Дім»</title>
+  <link rel="stylesheet" href="lab1.css" type="text/css">
+  <link rel="stylesheet" href="lab4.css" type="text/css">
+</head>
+</head>
+<body>
+
+  <nav class="main-nav">
+    <h2>Навігація по сайту</h2>
+    <ul>
+      <li><a href="author.html">Про автора</a></li>
+      <li><a href="firm.html">Про фірму</a></li>
+      <li><a href="news.html">Новини</a></li>
+      <li><a href="list.html">Списки та Меню</a></li>
+      <li><a href="tables.html" style="font-weight: bold;">Прайс та Таблиці</a></li>
+    </ul>
+  </nav>
+
+  <hr>
+
+  <main>
+    <h1>Таблиця реалізації продукції підприємства</h1>
+
+    <table summary="Таблиця реалізації тютюнової продукції ТОВ Тютюновий Дім: категорії, бренди, фасування, кількість, ціни та знижки"
+           rules="all" border="1" cellpadding="5" cellspacing="0" id="tobacco-table">
+
+      <caption id="tbl-caption" style="font-weight: bold; font-size: 18px; padding: 8px; caption-side: top; color: #8b0000;">
+        Реалізація тютюнових виробів ТОВ «Тютюновий Дім»
+      </caption>
+
+      <colgroup>
+        <col class="col-num" lang="uk">
+        <col class="col-name" lang="uk">
+        <col class="col-maker" lang="uk">
+        <col class="col-pack" lang="uk">
+        <col class="col-qty" lang="uk">
+        <col class="col-price" lang="uk">
+        <col class="col-disc-unit" lang="uk">
+        <col class="col-disc-batch" lang="uk">
+      </colgroup>
+
+      <thead valign="middle" style="background-color: #8b0000; color: white;" title="Верхній заголовок таблиці"
+             dir="ltr" charoff="5">
+        <tr charoff="5" class="head-row" style="text-align: center;" title="Рядок 1 заголовка">
+          <th rowspan="3" width="50" scope="col" abbr="№" axis="номер">№</th>
+          <th rowspan="3" width="370" scope="col" abbr="Назва" axis="товар">Категорія / Назва товару</th>
+          <th colspan="4" width="560" scope="colgroup" abbr="Реалізація" axis="реалізація">Реалізація продукції</th>
+          <th colspan="2" rowspan="2" width="240" scope="colgroup" abbr="Знижка" axis="знижка">Знижка, %</th>
+        </tr>
+        <tr charoff="5" class="head-row" style="text-align: center;" title="Рядок 2 заголовка">
+          <th width="215" scope="col" abbr="Виробник" axis="виробник">Виробник / Лінійка</th>
+          <th colspan="3" width="345" scope="colgroup" abbr="Кількість і ціна" axis="ціна">Обсяг та вартість</th>
+        </tr>
+        <tr charoff="5" class="head-row" style="text-align: center;" title="Рядок 3 заголовка">
+          <th width="215" scope="col" abbr="Бренд" axis="виробник">Торгова марка</th>
+          <th width="175" scope="col" abbr="Фас." axis="фасування">Фасування</th>
+          <th width="90" scope="col" abbr="К-сть" axis="кількість">К-сть, пач.</th>
+          <th width="80" scope="col" abbr="Ціна" axis="ціна">Ціна, грн</th>
+          <th width="115" scope="col" abbr="На од." axis="знижка">на одиницю</th>
+          <th width="125" scope="col" abbr="На парт." axis="знижка">на партію</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Сигарети, рядок 1">
+          <td rowspan="4" title="Номер групи" align="center" width="50" bgcolor="#f9f9f9">1</td>
+          <td title="Назва товару" align="left" width="370" bgcolor="#f9f9f9">Сигарети з фільтром «Карпати»</td>
+          <td title="Виробник" align="left" width="215" bgcolor="#f9f9f9">ТОВ «Тютюновий Дім»</td>
+          <td title="Фасування" align="center" width="175" bgcolor="#f9f9f9">20 шт./пачка</td>
+          <td title="Кількість" align="right" width="90" bgcolor="#f9f9f9">500</td>
+          <td title="Ціна" align="right" width="80" bgcolor="#f9f9f9">105</td>
+          <td title="Знижка на одиницю" align="right" width="115" bgcolor="#f9f9f9">3</td>
+          <td title="Знижка на партію" align="right" width="125" bgcolor="#f9f9f9">5</td>
+        </tr>
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Сигарети, рядок 2">
+          <td rowspan="3" title="Назва товару" align="left">Сигарети «Тютюновий Дім Класик»</td>
+          <td title="Виробник" align="left">Класик Синій</td>
+          <td title="Фасування" align="center">20 шт./пачка</td>
+          <td title="Кількість" align="right">300</td>
+          <td title="Ціна" align="right">120</td>
+          <td title="Знижка на одиницю" align="right">4</td>
+          <td rowspan="3" title="Знижка на партію" align="right">6</td>
+        </tr>
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Сигарети, рядок 3">
+          <td title="Виробник" align="left">Класик Червоний</td>
+          <td title="Фасування" align="center">20 шт./пачка</td>
+          <td title="Кількість" align="right">250</td>
+          <td title="Ціна" align="right">125</td>
+          <td title="Знижка на одиницю" align="right">4</td>
+        </tr>
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Сигарети, рядок 4">
+          <td title="Виробник" align="left">Класик Слім</td>
+          <td title="Фасування" align="center">20 шт./пачка</td>
+          <td title="Кількість" align="right">400</td>
+          <td title="Ціна" align="right">115</td>
+          <td title="Знижка на одиницю" align="right">5</td>
+        </tr>
+
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Сигарили, рядок 1">
+          <td rowspan="4" title="Номер групи" align="center">2</td>
+          <td title="Назва товару" align="left">Сигарили «Буковина Спешл»</td>
+          <td title="Виробник" align="left">ТМ «Чернівецька»</td>
+          <td title="Фасування" align="center">5 шт./упак.</td>
+          <td title="Кількість" align="right">150</td>
+          <td title="Ціна" align="right">180</td>
+          <td title="Знижка на одиницю" align="right">2</td>
+          <td title="Знижка на партію" align="right">4</td>
+        </tr>
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Сигарили, рядок 2">
+          <td rowspan="3" title="Назва товару" align="left">Сигарили «Тютюновий Еліт»</td>
+          <td title="Виробник" align="left">Mini Vanilla</td>
+          <td title="Фасування" align="center">10 шт./упак.</td>
+          <td title="Кількість" align="right">120</td>
+          <td title="Ціна" align="right">220</td>
+          <td title="Знижка на одиницю" align="right">3</td>
+          <td rowspan="3" title="Знижка на партію" align="right">5</td>
+        </tr>
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Сигарили, рядок 3">
+          <td title="Виробник" align="left">Mini Cherry</td>
+          <td title="Фасування" align="center">10 шт./упак.</td>
+          <td title="Кількість" align="right">110</td>
+          <td title="Ціна" align="right">220</td>
+          <td title="Знижка на одиницю" align="right">3</td>
+        </tr>
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Сигарили, рядок 4">
+          <td title="Виробник" align="left">Classic Cigarillo</td>
+          <td title="Фасування" align="center">10 шт./упак.</td>
+          <td title="Кількість" align="right">95</td>
+          <td title="Ціна" align="right">240</td>
+          <td title="Знижка на одиницю" align="right">4</td>
+        </tr>
+
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Тютюн, рядок 1">
+          <td rowspan="4" title="Номер групи" align="center">3</td>
+          <td title="Назва товару" align="left">Тютюн «Карпатський»</td>
+          <td title="Виробник" align="left">ТМ «Дім Тютюну»</td>
+          <td title="Фасування" align="center">кисет 50 г</td>
+          <td title="Кількість" align="right">200</td>
+          <td title="Ціна" align="right">210</td>
+          <td title="Знижка на одиницю" align="right">3</td>
+          <td title="Знижка на партію" align="right">6</td>
+        </tr>
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Тютюн, рядок 2">
+          <td rowspan="3" title="Назва товару" align="left">Тютюн люльковий «Pipe Select»</td>
+          <td title="Виробник" align="left">Aromatic Cherry</td>
+          <td title="Фасування" align="center">банка 40 г</td>
+          <td title="Кількість" align="right">85</td>
+          <td title="Ціна" align="right">280</td>
+          <td title="Знижка на одиницю" align="right">4</td>
+          <td rowspan="3" title="Знижка на партію" align="right">7</td>
+        </tr>
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Тютюн, рядок 3">
+          <td title="Виробник" align="left">Virginia Gold</td>
+          <td title="Фасування" align="center">банка 40 г</td>
+          <td title="Кількість" align="right">90</td>
+          <td title="Ціна" align="right">310</td>
+          <td title="Знижка на одиницю" align="right">4</td>
+        </tr>
+        <tr charoff="5" class="body-row" style="text-align: center;" title="Тютюн, рядок 4">
+          <td title="Виробник" align="left">Black Cavendish</td>
+          <td title="Фасування" align="center">банка 40 г</td>
+          <td title="Кількість" align="right">75</td>
+          <td title="Ціна" align="right">330</td>
+          <td title="Знижка на одиницю" align="right">5</td>
+        </tr>
+
+        <tr charoff="5" class="total-row" style="font-weight: bold; text-align: center; background-color: #e9ecef;" title="Підсумок">
+          <td title="Підсумок" align="center">S</td>
+          <td title="Разом" align="left">Разом по фірмі</td>
+          <td title="Виробник" align="left">&nbsp;</td>
+          <td title="Фасування" align="center">&nbsp;</td>
+          <td title="Загальна кількість" align="right">2575</td>
+          <td title="Середня ціна" align="right">180</td>
+          <td title="Середня знижка на одиницю" align="right">3,6</td>
+          <td title="Середня знижка на партію" align="right">5,8</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </main>
+
+  <hr>
+  <p align="center">
+    <b>Куріння шкодить вашому здоров'ю. Продаж строго особам від 18 років.</b>
+  </p>
+
+</body>
+</html>
