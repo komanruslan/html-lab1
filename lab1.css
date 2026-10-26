@@ -93,4 +93,37 @@ cite::after {
     color: #666666;
 }
 
+
+ul {
+    list-style-type: square;      
+    list-style-position: inside;  
+}
+
+ol {
+    list-style-type: decimal-leading-zero; 
+}
+
+dl {
+    margin-left: 15px;
+}
+
+dt {
+    font-weight: bold;
+    color: #8b0000;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    font-style: italic;
+    color: #333333;
+}
+
+marquee {
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-weight: bold;
+    color: #8b0000;
+}
 }
